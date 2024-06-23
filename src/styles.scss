@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('assets/images/pb.jpg');
+    background-color: rgb(35, 8, 48);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    height: fit-content;
+    margin: 0;
+    max-height: fit-content;
+    user-select: none;
+    width: min-content;
+}
+
+@media (max-width: 950px) {
+    body {
+        overflow: scroll;
+        width: 100%;
+    }
+}

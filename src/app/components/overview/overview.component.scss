@@ -1,0 +1,78 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.overviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    & .overview {
+        background: linear-gradient(136deg, rgba(243, 246, 250, 0.2) 10%, rgba(188, 207, 233, 0.2) 100%);
+        border-radius: 16px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        padding: 15px 20px;
+        width: 98%;
+
+        & .title {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 0 0 5px;
+            text-decoration: underline;
+        }
+
+        & .quick-list {
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        & .text {
+            font-size: 18px;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .page .overviews {
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+
+        .overview {
+            .title {
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+            .quick-list {
+                gap: 2px;
+                width: 98%;
+
+                & .text {
+                    text-align: center;
+                }
+            }
+            .text {
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+    .page .overviews .overview .quick-list {
+        justify-content: center;
+    }
+}

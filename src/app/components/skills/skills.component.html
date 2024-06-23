@@ -1,0 +1,83 @@
+<div class="page">
+    <div class="skills">
+        <div class="skill">
+            <h4><u>Front-End Technologies:</u></h4>
+            <div *ngFor="let item of frontEnd" class="row">
+                <img src='{{ "assets/images/skills/" + item.icon }}'>
+                <p>{{ item.name }}</p>
+            </div>
+        </div>
+
+        <div class="skillset">
+            <div class="skill">
+                <h4><u>Back-End Technologies:</u></h4>
+                <div *ngFor="let item of backEnd" class="row">
+                    <img src='{{ "assets/images/skills/" + item.icon }}'>
+                    <p>{{ item.name }}</p>
+                </div>
+            </div>
+        
+            <div class="skill">
+                <h4><u>Version Control:</u></h4>
+                <div *ngFor="let item of versionControl" class="row">
+                    <img src='{{ "assets/images/skills/" + item.icon }}'>
+                    <p>{{ item.name }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skillset">
+            <div class="skill">
+                <h4><u>IDEs & Tools:</u></h4>
+                <div *ngFor="let item of ideTools" class="row">
+                    <img src='{{ "assets/images/skills/" + item.icon }}'>
+                    <p>{{ item.name }}</p>
+                </div>
+            </div>
+        
+            <div class="skill">
+                <h4><u>UX/UI Design Tools:</u></h4>
+                <div *ngFor="let item of designTools" class="row">
+                    <img src='{{ "assets/images/skills/" + item.icon }}'>
+                    <p>{{ item.name }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skillset">
+            <div class="skill">
+                <h4><u>Project Planning:</u></h4>
+                <div *ngFor="let item of planning" class="row">
+                    <img src='{{ "assets/images/skills/" + item.icon }}'>
+                    <p>{{ item.name }}</p>
+                </div>
+            </div>
+        
+            <div class="skill">
+                <h4><u>Performance Optimization:</u></h4>
+                <div *ngFor="let item of optimization" class="row">
+                    <img src='{{ "assets/images/skills/" + item.icon }}'>
+                    <p>{{ item.name }}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skillset">
+            <div class="skill">
+                <h4><u>Problem-Solving:</u></h4>
+                <div *ngFor="let item of problemSolving" class="row">
+                    <img src='{{ "assets/images/skills/" + item.icon }}'>
+                    <p [innerHTML]="item.name"></p>
+                </div>
+            </div>
+        
+            <div class="skill">
+                <h4><u>Communication & Collaboration:</u></h4>
+                <div *ngFor="let item of comms" class="row">
+                    <img src='{{ "assets/images/skills/" + item.icon }}'>
+                    <p [innerHTML]="item.name"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

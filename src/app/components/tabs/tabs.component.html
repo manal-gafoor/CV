@@ -1,0 +1,8 @@
+<div class="tabs">
+    <div *ngFor="let tab of tabs; let i = index" class="tab">
+        <button (click)="selectTab(tab)" class="{{ 'tab' + i }}" [class.selected]="tabs[i] === selectedTab">
+            <img [src]="tab.img">
+            <p>{{ tab.title }}</p>
+        </button>
+    </div>
+</div>

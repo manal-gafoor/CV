@@ -1,0 +1,28 @@
+<div class="page">
+    <div class="details">
+        <div class="deet random">
+            <h4><u>Status:</u></h4>
+            <div *ngFor="let item of status" class="row">
+                <p>{{ item.item }} :</p>
+                <p>{{ item.value }}</p>
+            </div>
+        </div>
+
+        <div class="deet language">
+            <h4><u>Languages Known:</u></h4>
+            <div *ngFor="let item of languages" class="row">
+                <p>{{ item.item }} :</p>
+                <p>{{ item.value }}</p>
+            </div>
+        </div>
+
+        <div class="deet contact">
+            <h4><u>Contact:</u></h4>
+            <div *ngFor="let item of contact" class="row">
+                <p>{{ item.item }} :</p>
+                <a *ngIf="item.link" href="{{ item.link }}">{{ item.value }}</a>
+                <p *ngIf="!item.link">{{ item.value }}</p>
+            </div>
+        </div>
+    </div>
+</div>

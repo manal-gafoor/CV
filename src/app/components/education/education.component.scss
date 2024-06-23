@@ -1,0 +1,123 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.e-and-a {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+
+    & .education {
+        background: linear-gradient(136deg, rgba(243, 246, 250, 0.3) 10%, rgba(188, 207, 233, 0.3) 100%);
+        border-radius: 16px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+
+        & .certs-h3 {
+            margin-top: 40px;
+        }
+    }
+
+    & .achievements {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        background: linear-gradient(136deg, rgba(243, 246, 250, 0.3) 10%, rgba(188, 207, 233, 0.3) 100%);
+        border-radius: 16px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+
+        & .mobile-img {
+            display: none;
+        }
+
+        & .achievements-details {
+            height: 100%;
+            box-sizing: border-box;
+
+            & hr {
+                border: 1px solid rgb(35, 9, 47, 0.2);
+                
+            }
+        }
+
+        & .wider-img {
+            border-radius: 8px;
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+            max-height: 100%;
+            height: 440px;
+            max-width: 100%;
+            align-self: flex-start;
+        }
+    }
+
+    & h3 {
+        margin: 10px 0 15px;
+    }
+
+    & h4 {
+        margin: 10px 0;
+    }
+
+    & p {
+        margin: 10px 0;
+    }
+
+    & a {
+        display: inline-block;
+        margin: 0 0 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .page .e-and-a {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+
+        .education {
+            h3 {
+                font-size: 18px;
+    
+                &.certs-h3 {
+                    margin-top: 30px;
+                }
+            }
+    
+            p, h4 {
+                font-size: 16px;
+            }
+        }
+
+        .achievements {
+            flex-direction: column;
+            padding: 15px;
+            gap: 5px;
+            width: 100%;
+
+            & .mobile-img {
+                display: block;
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+            }
+
+            & .wider-img {
+                display: none;
+            }
+        }
+    }
+}
