@@ -1,7 +1,7 @@
 export const frontEnd = [
     {
         name: 'React',
-        icon: 'react.svg',
+        icon: 'react.png',
     },
     {
         name: 'Angular',
@@ -9,7 +9,7 @@ export const frontEnd = [
     },
     {
         name: 'React Native',
-        icon: 'react.svg',
+        icon: 'react.png',
     },
     {
         name: 'Redux Toolkit',
@@ -107,7 +107,7 @@ export const ideTools = [
     },
     {
         name: 'React developer tools',
-        icon: 'react.svg',
+        icon: 'react.png',
     },
     {
         name: 'Redux developer tools',

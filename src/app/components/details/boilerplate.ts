@@ -12,7 +12,7 @@ export const statusDetails = [
     {
         key: 3,
         item: 'Visa Status',
-        value: 'UK Work rights, April 2026'
+        value: 'UK work rights, April 2026'
     },
     {
         key: 4,
@@ -52,11 +52,11 @@ export const languageDetails = [
         item: 'Arabic (Limited)',
         value: '🌕🌕🌗🌑🌑'
     },
-    {
-        key: 6,
-        item: 'French (Elementary)',
-        value: '🌕🌑🌑🌑🌑'
-    },
+    // {
+    //     key: 6,
+    //     item: 'French (Elementary)',
+    //     value: '🌕🌑🌑🌑🌑'
+    // },
 ];
 
 export const contactDetails = [
@@ -81,22 +81,22 @@ export const contactDetails = [
     },
     {
         key: 4,
-        item: 'Website',
-        icon: '',
-        value: 'Website',
-        link: 'https://manal-gafoor.github.io/cv/'
-    },
-    {
-        key: 5,
         item: 'Location',
         icon: '',
         value: 'London, UK'
     },
     {
-        key: 6,
+        key: 5,
         item: 'Github',
         icon: '',
         value: 'GitHub',
         link: 'https://github.com/manal-gafoor'
     },
+    // {
+    //     key: 6,
+    //     item: 'Website',
+    //     icon: '',
+    //     value: 'Website',
+    //     link: 'https://manal-gafoor.github.io/cv/'
+    // },
 ];

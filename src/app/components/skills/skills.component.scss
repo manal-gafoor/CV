@@ -34,10 +34,10 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: normal;
-        gap: 10px;
+        gap: 6px;
 
         & h4 {
-            font-size: 18px;
+            font-size: 17px;
             margin: 0;
         }
 
@@ -48,6 +48,10 @@
             align-items: center;
             margin: 0;
 
+            & div{
+                width: 20px;
+            }
+
             & p {
                 font-size: 16px;
                 margin: 0;
@@ -56,6 +60,7 @@
             & img {
                 max-height: 20px;
                 max-width: 20px;
+                margin: auto;
             }
         }
     }
@@ -79,5 +84,11 @@
                 gap: 15px;
             }
         }
+    }
+}
+
+@media (max-width: 1300px) {
+    .page .skills {
+        gap: 10px;
     }
 }

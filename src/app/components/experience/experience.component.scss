@@ -41,11 +41,24 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1330px) {
     .page .experience .experience-details {
         padding: 15px;
+
+        h3 {
+            margin-top: 0;
+        }
     }
 }
+
+// @media (max-width: 1220px) {
+//     .page .experience {
+//         display: flex;
+//         flex-direction: column;
+//         padding: 10px;
+//         gap: 10px;
+//     }
+// }
 
 @media (max-width: 950px) {
     .page .experience {
